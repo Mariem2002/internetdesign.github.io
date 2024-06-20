@@ -1,0 +1,112 @@
+
+.backgroundImg{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 500px;
+}
+body{
+    background-color: rgb(220, 221, 238);
+    padding: 1px;
+    font-family: system-ui;
+}
+.myLogo{
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.menus{
+   display: flex;
+}
+li{
+    position: relative;
+    left: 100%;
+    padding: 10px;
+    display:inline;
+}
+.support-btn{
+    position: relative;
+    left: 100%;
+    display:inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(0, 74, 170);
+    color: aliceblue;
+    font-weight: bold;
+}
+.support-btn:active{
+    background-color: blueviolet;
+}
+.purchase-img img{
+    max-height: 30px;
+    position: relative;
+    top: 8px;
+
+}
+.signin-btn{
+    position: relative;
+    left: 100%;
+    margin-left: 30px;
+    background-color:rgba(255, 255, 255, 0);
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 20%;;
+    border-color: rgb(82, 0, 159);
+    color: rgb(18, 63, 102);
+    font-size: 17px;
+}
+.signin-btn:hover{
+    background-color:rgba(18, 1, 56, 0.74);
+    color: aliceblue;
+}
+.home-paragraph{
+    margin-top: 150px;
+    margin-left: 70px;
+    max-width: 400px;
+    text-align: justify;
+}
+.getStarted-btn{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+}
+.getStarted-btn:active{
+    background-color:rgb(0, 74, 170);
+}
+.squares{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 130px;
+    margin-left: 90px;
+}
+.square{
+    flex: 1;
+    margin: 10px;
+    max-width: 200px;
+    text-align: justify;
+    background-color: rgba(0, 0, 255, 0.064);
+    padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.readMore{
+    color: brown;
+}
+
+.circular-symbol{
+    height: 70px;
+}
+
+.loading-img{
+    position: absolute;
+    left: 45%;
+    top:45%;
+    height: 100px;
+}
