@@ -17,6 +17,7 @@ li{
     left: 100%;
     padding: 10px;
     display:inline;
+    cursor: pointer;
 }
 .support-btn{
     position: relative;
@@ -27,6 +28,7 @@ li{
     background-color:rgb(0, 74, 170);
     color: aliceblue;
     font-weight: bold;
+    cursor: pointer;
 }
 .support-btn:active{
     background-color: blueviolet;
@@ -35,7 +37,7 @@ li{
     max-height: 30px;
     position: relative;
     top: 8px;
-
+    cursor: pointer;
 }
 .signin-btn{
     position: relative;
@@ -48,6 +50,7 @@ li{
     border-color: rgb(82, 0, 159);
     color: rgb(18, 63, 102);
     font-size: 17px;
+    cursor: pointer;
 }
 .signin-btn:hover{
     background-color:rgba(18, 1, 56, 0.74);
@@ -56,14 +59,14 @@ li{
 .forbackground-rectangle{
     background-color: rgba(0, 0, 0, 0.319);
     position: absolute;
-    left: 270px;
+    left: 220px;
     top:230px;
     height:400px;
     width:500px;
 }
 .left-img{
     position: absolute;
-    left: 330px;
+    left: 280px;
     top:100px;
     height:490px;
     width:400px;
@@ -72,7 +75,7 @@ li{
 }
 .right-paragraph{
     position: absolute;
-    left: 770px;
+    left: 720px;
     top:100px;
     height:530px;
     width:500px;
@@ -105,6 +108,7 @@ li{
     width:250px;
     margin-left: 10px;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 .learnMore-btn:active{
     background-color:rgb(0, 74, 170);

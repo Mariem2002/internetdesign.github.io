@@ -17,7 +17,7 @@ export class SignupComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
   });
   showInfosAndGoHome(){
-    alert("Thank you for your subscription.\nMake sure to remember your email and password : \n"+ this.profileForm.value.email + "\n" + this.profileForm.value.password);
+    alert("Thank you for your subscription.\nPlease make sure to remember your email and password : \n"+ this.profileForm.value.email + "\n" + this.profileForm.value.password);
     this.router.navigate([""]);
   }
   constructor(
@@ -28,5 +28,8 @@ export class SignupComponent {
 public GoToSingnIn(){
 this.router.navigate(["signin"]);
 }
-
+GoToHome(){
+ 
+  this.router.navigate([""]);
+}
 }

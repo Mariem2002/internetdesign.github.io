@@ -31,7 +31,7 @@
                   <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Sign up</button>
               </section>
               <section>
-              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="button" class="cancelbtn" (click)="GoToHome()">Cancel</button>
               </section>
               <p>Already subscribed ? <a class="linktosignin-up" (click)="GoToSingnIn()"> Sign in now</a></p>
           </div>

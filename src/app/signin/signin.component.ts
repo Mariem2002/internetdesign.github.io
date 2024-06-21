@@ -16,8 +16,9 @@ export class SigninComponent {
     password: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
   });
-  showInfos(){
+  showInfosAndGoHome(){
     alert("Welcome back !");
+    this.router.navigate([""]);
   }
   constructor(
     public router : Router
@@ -27,4 +28,5 @@ export class SigninComponent {
 public GoToSingnUp(){
 this.router.navigate(["signup"]);
 }
+
 }

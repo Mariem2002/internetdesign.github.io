@@ -20,4 +20,8 @@ this.router.navigate(["signin"]);
 public GoToSingnUp(){
   this.router.navigate(["signup"]);
   }
+  public GoToAbout(){
+    this.router.navigate(["about"]);
+    }
+   
 }

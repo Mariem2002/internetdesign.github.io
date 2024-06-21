@@ -3,6 +3,7 @@ import {SignupComponent} from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 export const routes: Routes = [
     {
@@ -24,6 +25,11 @@ export const routes: Routes = [
     path: 'about',
     title: 'About Page',
     component: AboutComponent,
+    },
+    {
+    path: 'privacy-policy',
+    title: 'Privacy Policy Page',
+    component: PrivacypolicyComponent,
     }
 ];
 

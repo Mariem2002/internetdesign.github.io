@@ -17,4 +17,8 @@ export class AboutComponent {
 public GoToSingnIn(){
 this.router.navigate(["signin"]);
 }
+
+  public GoToHome(){
+    this.router.navigate([""]);
+    }
 }
