@@ -1,18 +1,118 @@
 body {
     background-color: rgb(220, 221, 238);
+    padding: 1px;
     font-family: system-ui;
 }
 
-.two-blocks {
+.myLogo {
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.menus {
     display: flex;
-    flex-direction: row;
-    height: 110vh;
-    /* Ensures the blocks take the full height of the viewport */
+}
+
+.menus li {
+    position: relative;
+    left: 80%;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+.support-btn {
+    position: relative;
+    left: 80%;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 74, 170);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.support-btn:active {
+    background-color: blueviolet;
+}
+
+.purchase-img img {
+    max-height: 30px;
+    position: relative;
+    top: 8px;
+
+}
+
+.signin-btn {
+    position: relative;
+    left: 80%;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 20%;
+    ;
+    border-color: rgb(82, 0, 159);
+    color: rgb(18, 63, 102);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: rgba(18, 1, 56, 0.74);
+    color: aliceblue;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(0, 0, 25);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer .email-footer {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer .cpright {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.611);
+}
+
+footer .stay-connected,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-twitter,
+.fa-brands.fa-instagram {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.568);
+    margin-right: 10px;
+}
+
+footer .stay-connected:hover,
+.fa-brands.fa-linkedin:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-instagram:hover {
+    color: rgb(240, 248, 255);
+}
+
+footer img {
+    width: 380px;
+}
+
+.contact-block {
+    text-align: center;
+    margin-left: 250px;
 }
 
 .block-left {
     background-color: rgba(246, 241, 247, 0.874);
-    margin-left: 250px;
     text-align: center;
     flex: 2;
     /* Each block will take up 50% of the container */
@@ -24,10 +124,15 @@ body {
     /*justify-content: center; /* Centers children vertically */
     overflow: hidden;
     max-width: 500px;
-    font-size: 20px;
-    padding-top: 120px;
+    font-size: 15px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10PX;
+}
+
+.block-left h1 {
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .block-right {
@@ -47,30 +152,6 @@ body {
 }
 
 
-.block-left h1 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.front-rectangle {
-    background-color: rgba(111, 5, 88, 0.508);
-    position: absolute;
-    height: 110vh;
-    width: 30.5%;
-    top: 0.9%;
-    left: 51.8%;
-}
-
-.pc-cafe {
-    object-fit: cover;
-    /* Ensures the image covers the block */
-    position: absolute;
-    height: 110vh;
-    width: 30.5%;
-    top: 0.9%;
-    left: 51.8%;
-}
-
 form {
     width: 100%;
     /* Ensures the form takes the full width of its container */
@@ -87,7 +168,7 @@ form {
 
 }
 
-button {
+.block-left button {
     background-color: rgba(49, 0, 195, 0.636);
     color: aliceblue;
     width: 200px;
@@ -99,7 +180,7 @@ button {
     border-color: rgba(240, 248, 255, 0.695);
 }
 
-button:active {
+.block-left button:active {
     background-color: rgb(0, 74, 170);
 }
 
@@ -108,11 +189,11 @@ button:active {
 }
 
 /*button{
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}*/
+     width: 200px;
+     height: 50px;
+     font-size: 20px;
+     margin-bottom: 10px;
+ }*/
 .first-btn {
     width: 250px;
 }
@@ -140,7 +221,7 @@ button:active {
 .checkbox {
     width: 20px;
     height: 20px;
-    background-color: rgba(46, 3, 87, 0.104);
+    background-color: rgba(46, 3, 87, 0.188);
     border-radius: 100%;
     display: inline-block;
     vertical-align: middle;
@@ -149,7 +230,7 @@ button:active {
 }
 
 .custom-checkbox input:checked+.checkbox {
-    background-color: rgba(55, 2, 80, 0.847);
+    background-color: rgba(55, 2, 80, 0.801);
     /* Change color when checked */
 }
 
@@ -157,16 +238,12 @@ button:active {
 .email-pass {
     margin-left: 30px;
     text-align: left;
-    font-size: 17px;
+
 }
 
 .linktosignin-up {
     cursor: pointer;
     color: rgb(252, 124, 173);
-}
-
-.linktoprivacy {
-    cursor: pointer;
 }
 
 .loading-img {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -16,17 +16,17 @@ export class SigninComponent {
     password: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
   });
-  showInfosAndGoHome(){
+  showInfosAndGoHome() {
     alert("Welcome back !");
     this.router.navigate([""]);
   }
   constructor(
-    public router : Router
-  ){
+    public router: Router
+  ) {
 
   }
-public GoToSingnUp(){
-this.router.navigate(["signup"]);
-}
+  public GoToSingnUp() {
+    this.router.navigate(["signup"]);
+  }
 
 }

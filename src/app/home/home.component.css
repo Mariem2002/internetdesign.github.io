@@ -1,91 +1,105 @@
-
-.backgroundImg{
+.backgroundImg {
     position: absolute;
     bottom: 0%;
     right: 0%;
     height: 500px;
 }
-body{
+
+body {
     background-color: rgb(220, 221, 238);
     padding: 1px;
     font-family: system-ui;
 }
-.myLogo{
+
+.myLogo {
     height: 50px;
     margin-left: 30px;
     padding-top: 20px;
 }
-.menus{
-   display: flex;
+
+.menus {
+    display: flex;
 }
-li{
+
+li {
     position: relative;
-    left: 100%;
+    left: 80%;
     padding: 10px;
-    display:inline;
+    display: inline;
     cursor: pointer;
 }
-.support-btn{
+
+.support-btn {
     position: relative;
-    left: 100%;
-    display:inline;
+    left: 80%;
+    display: inline;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:rgb(0, 74, 170);
+    background-color: rgb(0, 74, 170);
     color: aliceblue;
     font-weight: bold;
     cursor: pointer;
 }
-.support-btn:active{
+
+.support-btn:active {
     background-color: blueviolet;
 }
-.purchase-img img{
+
+.purchase-img img {
     max-height: 30px;
     position: relative;
     top: 8px;
 
 }
-.signin-btn{
+
+.signin-btn {
     position: relative;
-    left: 100%;
+    left: 80%;
     margin-left: 30px;
-    background-color:rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     border-width: 1px;
     padding: 10px;
-    border-radius: 20%;;
+    border-radius: 20%;
+    ;
     border-color: rgb(82, 0, 159);
     color: rgb(18, 63, 102);
     font-size: 17px;
     cursor: pointer;
 }
-.signin-btn:hover{
-    background-color:rgba(18, 1, 56, 0.74);
+
+.signin-btn:hover {
+    background-color: rgba(18, 1, 56, 0.74);
     color: aliceblue;
 }
-.home-paragraph{
+
+.home-paragraph {
     margin-top: 150px;
     margin-left: 70px;
-    max-width: 400px;
+    max-width: 500px;
     text-align: justify;
 }
-.getStarted-btn{
+
+.getStarted-btn {
     background-color: blueviolet;
     color: aliceblue;
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
 }
-.getStarted-btn:active{
-    background-color:rgb(0, 74, 170);
+
+.getStarted-btn:active {
+    background-color: rgb(0, 74, 170);
 }
-.squares{
+
+.squares {
     display: flex;
     flex-direction: row;
     position: relative;
     margin-top: 130px;
     margin-left: 90px;
 }
-.square{
+
+.square {
     flex: 1;
     margin: 10px;
     max-width: 200px;
@@ -97,21 +111,64 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-   
+
+
 }
-.readMore{
+
+.readMore {
     color: brown;
     cursor: pointer;
 }
 
-.circular-symbol{
+.circular-symbol {
     height: 70px;
 }
 
-.loading-img{
+/*Footer*/
+
+footer {
+    background-color: rgb(0, 0, 25);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer .email-footer {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer .cpright {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.611);
+}
+
+footer .stay-connected,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-twitter,
+.fa-brands.fa-instagram {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.568);
+    margin-right: 10px;
+}
+
+footer .stay-connected:hover,
+.fa-brands.fa-linkedin:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-instagram:hover {
+    color: rgb(240, 248, 255);
+}
+
+footer img {
+    width: 380px;
+}
+
+/*-------*/
+.loading-img {
     position: absolute;
     left: 45%;
-    top:45%;
+    top: 45%;
     height: 100px;
 }

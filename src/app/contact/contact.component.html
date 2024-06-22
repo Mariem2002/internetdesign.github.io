@@ -1,0 +1,55 @@
+@defer{
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <app-header></app-header>
+    <div class="contact-block">
+        <h1><span style="color: #54044179;">Contact us</span></h1>
+        <p>Got a question ? We'd love to hear from you.</p>
+        <div class="block-left">
+            <form [formGroup]="profileForm" (ngSubmit)="showInfosAndGoHome()" action="">
+                <div class="container">
+
+                    <div class="email-pass">
+                        <label for="name"><b>Name<span>(required)</span></b></label>
+                        <input class="input-email-pass" id="name" type="text" formControlName="name" placeholder=''
+                            name="name" required>
+                        <br><br>
+                        <label for="email"><b>Email<span>(required)</span></b></label>
+                        <input id="email" class="input-email-pass" type="email" formControlName="email" placeholder=""
+                            name="email" required>
+
+                    </div>
+                    <br>
+                    <label class="Message"><b>Message<span>(required)</span></b>
+                        <textarea></textarea>
+                    </label>
+
+
+
+                    <div class="clearfix">
+                        <section>
+                            <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Submit</button>
+                        </section>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <app-footer>
+
+
+    </app-footer>
+</body>
+}
+@loading (minimum 1.5s){
+<img class="loading-img"
+    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2796ed81999693.5d10c0872415e.gif" />
+}

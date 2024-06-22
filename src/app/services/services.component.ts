@@ -4,16 +4,14 @@ import { FooterComponent } from "../footer/footer.component";
 import { HeaderComponent } from "../header/header.component";
 
 @Component({
-  selector: 'app-privacypolicy',
+  selector: 'app-services',
   standalone: true,
-  templateUrl: './privacypolicy.component.html',
-  styleUrl: './privacypolicy.component.css',
+  templateUrl: './services.component.html',
+  styleUrl: './services.component.css',
   imports: [FooterComponent, HeaderComponent]
 })
-export class PrivacypolicyComponent {
-  constructor(
-    public router: Router
-  ) {
+export class ServicesComponent {
+  constructor(public router: Router) {
 
   }
   public GoToAbout() {
@@ -24,9 +22,6 @@ export class PrivacypolicyComponent {
   }
   public GoToHome() {
     this.router.navigate([""]);
-  }
-  public GoToServices() {
-    this.router.navigate(["services"]);
   }
   public GoToContact() {
     this.router.navigate(["contact"]);

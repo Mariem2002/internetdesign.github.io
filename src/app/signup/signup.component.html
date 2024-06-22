@@ -1,50 +1,53 @@
 @defer {
-  <body>
-      <div class="two-blocks">
-      <div class="block-left">
-          <img src=""/>
-          <form [formGroup]="profileForm" (ngSubmit)="showInfosAndGoHome()" action="action_page.php" >
-          <div class="container">
-            <h1><span style="color: #54044179;">SIGN UP</span></h1>
-            <button class="first-btn">Sign up with Google</button>
-            <hr>
-            <p class ="or"> - or - </p>
-            <div class="email-pass">
+
+<body>
+  <div class="two-blocks">
+    <div class="block-left">
+      <img src="" />
+      <form [formGroup]="profileForm" (ngSubmit)="showInfosAndGoHome()" action="action_page.php">
+        <div class="container">
+          <h1><span style="color: #54044179;">SIGN UP</span></h1>
+          <button class="first-btn">Sign up with Google</button>
+          <hr>
+          <p class="or"> - or - </p>
+          <div class="email-pass">
             <label for="email"><b>Email</b></label>
-            <input class="input-email-pass"id="email" type="text" formControlName="email" placeholder='' name="email" required>
-             <br><br>
+            <input class="input-email-pass" id="email" type="text" formControlName="email" placeholder='' name="email"
+              required>
+            <br><br>
             <label for="psw"><b>Password</b></label>
-            <input id="password" class="input-email-pass" type="password" formControlName="password" placeholder="" name="psw" required>
-          
-            </div>
+            <input id="password" class="input-email-pass" type="password" formControlName="password" placeholder=""
+              name="psw" required>
+          </div>
           <br>
-            <label  class="custom-checkbox">
-              <input type="checkbox" class="hidden-checkbox" name="remember" style="margin-bottom:15px"> Remember me
-    <span class="checkbox"></span>
-             
-            </label>
-            <p style="color: rgba(0, 0, 0, 0.54);">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-           
-        
-            <div class="clearfix">
-              <section>
-                  <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Sign up</button>
-              </section>
-              <section>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="hidden-checkbox" name="remember" style="margin-bottom:15px"> Remember me
+            <span class="checkbox"></span>
+          </label>
+
+          <p style="color: rgba(0, 0, 0, 0.54);">By creating an account you agree to our <a class="linktoprivacy"
+              (click)="GoToPrivacy()" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <div>
+            <section>
+              <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Sign up</button>
+            </section>
+            <section>
               <button type="button" class="cancelbtn" (click)="GoToHome()">Cancel</button>
-              </section>
               <p>Already subscribed ? <a class="linktosignin-up" (click)="GoToSingnIn()"> Sign in now</a></p>
+            </section>
           </div>
-          </div>
-        </form>
-          
-      </div>
-      <div class="block-right"><img class="pc-cafe" src="https://images.unsplash.com/photo-1536148935331-408321065b18?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-      </div>
-      <div class="front-rectangle"></div>
-      </body>
-    }
-    @loading(minimum 1.5s){
-      <img class="loading-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2796ed81999693.5d10c0872415e.gif"/>
-  
-    }
+        </div>
+      </form>
+    </div>
+    <div class="block-right"><img class="pc-cafe"
+        src="https://images.unsplash.com/photo-1536148935331-408321065b18?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+  </div>
+  <div class="front-rectangle"></div>
+</body>
+}
+@loading(minimum 1.5s){
+<img class="loading-img"
+  src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2796ed81999693.5d10c0872415e.gif" />
+
+}

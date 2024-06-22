@@ -1,39 +1,52 @@
 @defer{
-<body >
-    <img class="backgroundImg" src = "https://imgv3.fotor.com/images/side/Create-graphic-designs-easily-with-Fotor.png"/>
-    <section class="menus">
-        <img class="myLogo" src='https://cdn.discordapp.com/attachments/1244019120211492985/1252987137511657492/logo.png?ex=667436b4&is=6672e534&hm=d5ce915c41c1740f0e19e1c7b640ba181dffa64f2b316a9baf6d74d69eb9b0aa&'/>
-        <ul>
-        <li>Home</li><li (click)="GoToAbout()">About</li><li>Features</li><li>Shop</li><li>Contact</li><li class="purchase-img"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png"/></li>
-        <button class="support-btn">SUPPORT</button><button class="signin-btn" (click)="GoToSingnIn()">Sign in</button></ul>
-    </section>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <img class="backgroundImg" src="https://imgv3.fotor.com/images/side/Create-graphic-designs-easily-with-Fotor.png" />
+    <app-header></app-header>
     <div class="home-paragraph">
         <h1>Can great design change the <span style="color: rgb(224, 123, 236);">world?</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut libero pulvinar, sit amet laoreet lorem ultricies. Nulla facilisi. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod quam eget nibh molestie, sit amet rutrum justo fermentum. Duis consectetur enim a mi convallis, sed tempus velit consequat. Quisque ullamcorper consequat ligula, a gravida nisi feugiat at. Integer eu eros vel lacus fermentum bibendum. Vivamus non fringilla leo.</p>
+        <p>We specialize in crafting visually stunning and user-friendly websites that adapt seamlessly across all
+            devices—from desktops to smartphones and tablets. Our tailored solutions prioritize functionality, ensuring
+            your website not only looks impressive but also performs optimally, enhancing user experience and driving
+            engagement. With a proven track record of delivering results for clients across various industries, we blend
+            creativity with technical expertise to create responsive designs that resonate with your audience and
+            achieve your business goals. Explore our portfolio to see examples of our transformative work, and contact
+            us today to discuss how we can elevate your online presence with our responsive web design services.</p>
         <button class="getStarted-btn" (click)="GoToSingnUp()">GET STARTED</button>
     </div>
     <div class="squares">
         <div class="square">
             <img class="circular-symbol" src="https://beportage.com/wp-content/uploads/2018/12/h7-img-1-2.png">
             <h2 class="square-title">Prosperity line</h2>
-            <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut libero pulvinar, sit amet laoreet lorem ultricies.</p>
-            <p class="readMore"><a href="#">Read more ></a ></p>
+            <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut
+                libero pulvinar, sit amet laoreet lorem ultricies.</p>
+            <p class="readMore"><a href="#">Read more ></a></p>
         </div>
         <div class="square">
             <img class="circular-symbol" src="https://beportage.com/wp-content/uploads/2018/12/h7-img-2.png">
             <h2 class="square-title">Property line</h2>
-            <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut libero pulvinar, sit amet laoreet lorem ultricies.</p>
-            <p class="readMore"><a href="#">Read more ></a ></p></div>
-            <div class="square">
-                <img class="circular-symbol"  src="https://beportage.com/wp-content/uploads/2018/12/h7-img-3.png">
-                <h2 class="square-title">Protection line</h2>
-                <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut libero pulvinar, sit amet laoreet lorem ultricies.</p>
-                <p class="readMore"><a href="#">Read more ></a></p>
-            </div>
+            <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut
+                libero pulvinar, sit amet laoreet lorem ultricies.</p>
+            <p class="readMore"><a href="#">Read more ></a></p>
         </div>
-    
+        <div class="square">
+            <img class="circular-symbol" src="https://beportage.com/wp-content/uploads/2018/12/h7-img-3.png">
+            <h2 class="square-title">Protection line</h2>
+            <p class="square-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida dolor ut
+                libero pulvinar, sit amet laoreet lorem ultricies.</p>
+            <p class="readMore"><a href="#">Read more ></a></p>
+        </div>
+    </div>
+    <app-footer></app-footer>
 </body>
 }
 @loading (minimum 1.5s){
-    <img class="loading-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2796ed81999693.5d10c0872415e.gif"/>
+<img class="loading-img"
+    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2796ed81999693.5d10c0872415e.gif" />
 }

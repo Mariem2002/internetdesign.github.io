@@ -1,5 +1,4 @@
-
-body{
+body {
     height: 100%;
     background-color: rgb(220, 221, 238);
     font-family: system-ui;
@@ -8,16 +7,21 @@ body{
 .two-blocks {
     display: flex;
     flex-direction: row;
-    height: 100vh; /* Ensures the blocks take the full height of the viewport */
+    height: 100vh;
+    /* Ensures the blocks take the full height of the viewport */
 }
-.block-left{
-   background-color: rgba(246, 241, 247, 0.874);
+
+.block-left {
+    background-color: rgba(246, 241, 247, 0.874);
     margin-left: 250px;
     text-align: center;
-    flex: 2; /* Each block will take up 50% of the container */
+    flex: 2;
+    /* Each block will take up 50% of the container */
     display: flex;
-    flex-direction: column; /* Ensures children stack vertically within each block */
-    align-items: center; /* Centers children horizontally */
+    flex-direction: column;
+    /* Ensures children stack vertically within each block */
+    align-items: center;
+    /* Centers children horizontally */
     /*justify-content: center; /* Centers children vertically */
     overflow: hidden;
     max-width: 500px;
@@ -26,53 +30,46 @@ body{
     padding-left: 10px;
     padding-right: 10PX;
 }
-  .block-right {
-    margin-right: 250px;
-    text-align: center;
-    flex: 1; /* Each block will take up 50% of the container */
-    display: flex;
-    flex-direction: column; /* Ensures children stack vertically within each block */
-    align-items: center; /* Centers children horizontally */
-    justify-content: center; /* Centers children vertically */
-    overflow: hidden; /* Ensures content doesn't overflow the block */
-}
- .front-rectangle{
-    background-color: rgba(111, 5, 88, 0.508);
-    position: absolute;
-    height: 100%;
-    width: 30.5%;
-    top: 0.9%;
-    left: 51.8%;
- }
-.block-left h1{
+
+.block-left h1 {
     font-size: 30px;
     font-weight: 600;
 }
 
-.pc-cafe {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Ensures the image covers the block */
-    position: absolute;
-    height: 100%;
-    width: 30.5%;
-    top: 0.9%;
-    left: 51.8%;}
+.block-right {
+    margin-right: 250px;
+    text-align: center;
+    flex: 1;
+    /* Each block will take up 50% of the container */
+    display: flex;
+    flex-direction: column;
+    /* Ensures children stack vertically within each block */
+    align-items: center;
+    /* Centers children horizontally */
+    justify-content: center;
+    /* Centers children vertically */
+    overflow: hidden;
+    /* Ensures content doesn't overflow the block */
+}
+
 
 form {
-    width: 100%; /* Ensures the form takes the full width of its container */
+    width: 100%;
+    /* Ensures the form takes the full width of its container */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container {
-    width: 100%; /* Ensures the form content takes the full width of the form */
+    width: 100%;
+    /* Ensures the form content takes the full width of the form */
     /* Optional: add some padding */
     /*box-sizing: border-box;*/
 
 }
-button{
+
+button {
     background-color: rgba(49, 0, 195, 0.636);
     color: aliceblue;
     width: 200px;
@@ -80,70 +77,101 @@ button{
     font-size: 20px;
     margin-bottom: 10px;
     cursor: pointer;
-    border-radius: 25px; 
+    border-radius: 25px;
     border-color: rgba(240, 248, 255, 0.695);
 }
-button:active{
-    background-color:rgb(0, 74, 170);
+
+button:active {
+    background-color: rgb(0, 74, 170);
 }
-.signinbtn{
-    margin-top:10px;
+
+.signinbtn {
+    margin-top: 10px;
 }
+
 /*button{
     width: 200px;
     height: 50px;
     font-size: 20px;
     margin-bottom: 10px;
 }*/
-.first-btn{
+.first-btn {
     width: 250px;
 }
-.input-email-pass{
+
+.input-email-pass {
     width: 270px;
     height: 30px;
     position: absolute;
     left: 400px;
     border-color: rgba(240, 248, 255, 0);
     background-color: rgba(83, 43, 226, 0.116);
-    border-radius: 25px; 
+    border-radius: 25px;
 }
+
 /*For the checkbox-----------*/
 .hidden-checkbox {
     display: none;
-  }
- 
-  .custom-checkbox {
+}
+
+.custom-checkbox {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .checkbox {
+}
+
+.checkbox {
     width: 20px;
     height: 20px;
     background-color: rgba(46, 3, 87, 0.188);
     border-radius: 100%;
     display: inline-block;
     vertical-align: middle;
-    border: 2px solid rgb(255, 255, 255); /* Add border color here */
-  }
-  
-  .custom-checkbox input:checked + .checkbox {
-    background-color: rgba(55, 2, 80, 0.801); /* Change color when checked */
-  }
+    border: 2px solid rgb(255, 255, 255);
+    /* Add border color here */
+}
+
+.custom-checkbox input:checked+.checkbox {
+    background-color: rgba(55, 2, 80, 0.801);
+    /* Change color when checked */
+}
+
 /*----------------*/
-.email-pass{
+.email-pass {
     margin-left: 30px;
     text-align: left;
     font-size: 17px;
 }
-.linktosignin-up{
+
+.linktosignin-up {
     cursor: pointer;
-    color:rgb(252, 124, 173);
-}
-.loading-img{
-    position: absolute;
-    left: 45%;
-    top:45%;
-    height: 100px;
+    color: rgb(252, 124, 173);
 }
 
+.front-rectangle {
+    background-color: rgba(111, 5, 88, 0.508);
+    position: absolute;
+    height: 100%;
+    width: 30.5%;
+    top: 0.9%;
+    left: 51.8%;
+}
+
+
+.pc-cafe {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the block */
+    position: absolute;
+    height: 100%;
+    width: 30.5%;
+    top: 0.9%;
+    left: 51.8%;
+}
+
+.loading-img {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    height: 100px;
+}

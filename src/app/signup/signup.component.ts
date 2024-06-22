@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -16,20 +16,24 @@ export class SignupComponent {
     password: new FormControl('', [Validators.required, Validators.minLength(8)]),
     email: new FormControl('', [Validators.required, Validators.email]),
   });
-  showInfosAndGoHome(){
-    alert("Thank you for your subscription.\nPlease make sure to remember your email and password : \n"+ this.profileForm.value.email + "\n" + this.profileForm.value.password);
+  showInfosAndGoHome() {
+    alert("Thank you for your subscription.\nPlease make sure to remember your email and password : \n" + this.profileForm.value.email + "\n" + this.profileForm.value.password);
     this.router.navigate([""]);
   }
   constructor(
-    public router : Router
-  ){
+    public router: Router
+  ) {
 
   }
-public GoToSingnIn(){
-this.router.navigate(["signin"]);
-}
-GoToHome(){
- 
-  this.router.navigate([""]);
-}
+  public GoToSingnIn() {
+    this.router.navigate(["signin"]);
+  }
+  GoToHome() {
+
+    this.router.navigate([""]);
+  }
+  GoToPrivacy() {
+
+    this.router.navigate(["privacy-policy"]);
+  }
 }

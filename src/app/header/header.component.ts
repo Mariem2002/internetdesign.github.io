@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FooterComponent } from "../footer/footer.component";
-import { HeaderComponent } from "../header/header.component";
 
 @Component({
-  selector: 'app-privacypolicy',
+  selector: 'app-header',
   standalone: true,
-  templateUrl: './privacypolicy.component.html',
-  styleUrl: './privacypolicy.component.css',
-  imports: [FooterComponent, HeaderComponent]
+  imports: [],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class PrivacypolicyComponent {
+export class HeaderComponent {
   constructor(
     public router: Router
   ) {

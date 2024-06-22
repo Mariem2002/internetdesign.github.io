@@ -1,103 +1,124 @@
-body{
+body {
     background-color: rgb(220, 221, 238);
     padding: 1px;
     font-family: system-ui;
-    height: 105vh; 
+    height: 105vh;
 }
-.myLogo{
+
+.myLogo {
     height: 50px;
     margin-left: 30px;
     padding-top: 20px;
 }
-.menus{
-   display: flex;
+
+.menus {
+    display: flex;
 }
-li{
+
+li {
     position: relative;
-    left: 100%;
+    left: 80%;
     padding: 10px;
-    display:inline;
+    display: inline;
     cursor: pointer;
 }
-.support-btn{
+
+.support-btn {
     position: relative;
-    left: 100%;
-    display:inline;
+    left: 80%;
+    display: inline;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:rgb(0, 74, 170);
+    background-color: rgb(0, 74, 170);
     color: aliceblue;
     font-weight: bold;
     cursor: pointer;
 }
-.support-btn:active{
+
+.support-btn:active {
     background-color: blueviolet;
 }
-.purchase-img img{
+
+.purchase-img img {
     max-height: 30px;
     position: relative;
     top: 8px;
     cursor: pointer;
 }
-.signin-btn{
+
+.signin-btn {
     position: relative;
-    left: 100%;
+    left: 80%;
     margin-left: 30px;
-    background-color:rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     border-width: 1px;
     padding: 10px;
-    border-radius: 20%;;
+    border-radius: 20%;
+    ;
     border-color: rgb(82, 0, 159);
     color: rgb(18, 63, 102);
     font-size: 17px;
     cursor: pointer;
 }
-.signin-btn:hover{
-    background-color:rgba(18, 1, 56, 0.74);
+
+.signin-btn:hover {
+    background-color: rgba(18, 1, 56, 0.74);
     color: aliceblue;
 }
-.forbackground-rectangle{
-    background-color: rgba(0, 0, 0, 0.319);
-    position: absolute;
-    left: 220px;
-    top:230px;
-    height:400px;
-    width:500px;
+
+.para-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.left-img{
-    position: absolute;
-    left: 280px;
-    top:100px;
-    height:490px;
-    width:400px;
+
+.forbackground-rectangle {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.319);
+    height: 400px;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.left-img {
+    position: relative;
+    left: 50px;
+    height: 100%;
+    width: 320px;
+    margin-bottom: 50px;
     background-image: url("//images03.nicepage.com/c461c07a441a5d220e8feb1a/483b4e1e31f25f7f9bda4d9a/3546919min.jpg");
     background-size: cover;
 }
-.right-paragraph{
-    position: absolute;
-    left: 720px;
-    top:100px;
-    height:530px;
-    width:500px;
+
+.right-paragraph {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    width: 500px;
     background-color: rgba(255, 255, 255, 0.933);
     padding: 50px;
-    
+
 }
-.about-title{
+
+.about-title {
     font-size: 65px;
-    font-weight:900;
+    font-weight: 900;
     line-height: 5px;
     color: rgba(45, 6, 53, 0.351);
 }
-.slogan{
+
+.slogan {
     font-size: 32px;
     line-height: 5px;
 }
-.about-para{
+
+.about-para {
     font-size: 23px;
     text-align: justify;
 }
-.learnMore-btn{
+
+.learnMore-btn {
     background-color: blueviolet;
     color: aliceblue;
     padding: 20px;
@@ -105,17 +126,61 @@ li{
     padding-bottom: 15px;
     font-weight: normal;
     font-size: 18px;
-    width:250px;
+    width: 250px;
     margin-left: 10px;
     letter-spacing: 5px;
     cursor: pointer;
 }
-.learnMore-btn:active{
-    background-color:rgb(0, 74, 170);
+
+.learnMore-btn:active {
+    background-color: rgb(0, 74, 170);
 }
-.loading-img{
+
+/*Footer*/
+
+footer {
+    background-color: rgb(0, 0, 25);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer .email-footer {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer .cpright {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.611);
+}
+
+footer .stay-connected,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-twitter,
+.fa-brands.fa-instagram {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.568);
+    margin-right: 10px;
+}
+
+footer .stay-connected:hover,
+.fa-brands.fa-linkedin:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-instagram:hover {
+    color: rgb(240, 248, 255);
+}
+
+footer img {
+    width: 380px;
+}
+
+/*-------*/
+.loading-img {
     position: absolute;
     left: 45%;
-    top:45%;
+    top: 45%;
     height: 100px;
 }

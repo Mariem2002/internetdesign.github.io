@@ -1,0 +1,251 @@
+body {
+    background-color: rgb(220, 221, 238);
+    padding: 1px;
+    font-family: system-ui;
+}
+
+.myLogo {
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.menus {
+    display: flex;
+    max-height: 46px;
+}
+
+.menus li {
+    position: relative;
+    left: 80%;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+.support-btn {
+    position: relative;
+    left: 80%;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 74, 170);
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.support-btn:active {
+    background-color: blueviolet;
+}
+
+.purchase-img img {
+    max-height: 30px;
+    position: relative;
+    top: 8px;
+
+}
+
+.signin-btn {
+    position: relative;
+    left: 80%;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 20%;
+    ;
+    border-color: rgb(82, 0, 159);
+    color: rgb(18, 63, 102);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: rgba(18, 1, 56, 0.74);
+    color: aliceblue;
+}
+
+
+
+.loading-img {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    height: 100px;
+}
+
+.header-img {
+    background-image: url("https://preview.colorlib.com/theme/personalportfolio/assets/img/hero/hero2.jpg.webp");
+    background-size: cover;
+    min-width: 100%;
+    height: 300px;
+
+}
+
+.services-title {
+    padding-top: 70px;
+    padding-left: 150px;
+    font-size: 90px;
+    font-weight: 600;
+    color: rgb(75, 82, 128);
+}
+
+.squares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.first-row-sq {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-row-sq {
+    display: flex;
+    flex-direction: row;
+}
+
+/*----squares----*/
+.square {
+    margin-top: 110px;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0.75px;
+    border-radius: 7px;
+    border-color: rgba(99, 123, 143, 0.414);
+    /*background-color: rgb(255, 255, 255);*/
+    padding: 3%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.square * {
+    z-index: 3;
+}
+
+.square:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 118, 134);
+    transition: .5s;
+    z-index: 1;
+}
+
+div:hover:before {
+    top: 0;
+}
+
+/*-------*/
+.square {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    margin-top: 110px;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0.75px;
+    border-radius: 7px;
+    border-color: rgba(99, 123, 143, 0.414);
+    /*background-color: rgb(255, 255, 255);*/
+    padding: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.square img {
+    height: 100px;
+}
+
+.contact-img {
+    background-image: url("https://preview.colorlib.com/theme/personalportfolio/assets/img/gallery/section_bg02.jpg.webp");
+    background-size: cover;
+    min-width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.contact-title {
+    padding-top: 70px;
+    padding-left: 150px;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(75, 82, 128);
+}
+
+.contact-btn {
+    margin-left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 74, 170);
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.contact-btn:active {
+    background-color: blueviolet;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(0, 0, 25);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer .email-footer {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+footer .cpright {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.611);
+}
+
+footer .stay-connected,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-twitter,
+.fa-brands.fa-instagram {
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.568);
+    margin-right: 10px;
+}
+
+footer .stay-connected:hover,
+.fa-brands.fa-linkedin:hover,
+.fa-brands.fa-twitter:hover,
+.fa-brands.fa-instagram:hover {
+    color: rgb(240, 248, 255);
+}
+
+footer img {
+    width: 380px;
+}
+
+/*-------*/
