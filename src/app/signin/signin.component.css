@@ -7,7 +7,7 @@ body {
 .two-blocks {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 110vh;
     /* Ensures the blocks take the full height of the viewport */
 }
 
