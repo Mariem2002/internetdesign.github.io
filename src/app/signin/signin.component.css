@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     background-color: rgb(220, 221, 238);
     font-family: system-ui;
 }
@@ -7,28 +6,19 @@ body {
 .two-blocks {
     display: flex;
     flex-direction: row;
-    height: 110vh;
-    /* Ensures the blocks take the full height of the viewport */
 }
-
+.centered{
+    text-align: center;
+}
 .block-left {
+    flex: 1;
     background-color: rgba(246, 241, 247, 0.874);
     margin-left: 250px;
-    text-align: center;
-    flex: 2;
-    /* Each block will take up 50% of the container */
-    display: flex;
-    flex-direction: column;
-    /* Ensures children stack vertically within each block */
-    align-items: center;
-    /* Centers children horizontally */
-    /*justify-content: center; /* Centers children vertically */
     overflow: hidden;
-    max-width: 500px;
     font-size: 20px;
-    padding-top: 120px;
-    padding-left: 10px;
-    padding-right: 10PX;
+    padding-top: 80px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .block-left h1 {
@@ -36,39 +26,10 @@ body {
     font-weight: 600;
 }
 
-.block-right {
-    margin-right: 250px;
-    text-align: center;
-    flex: 1;
-    /* Each block will take up 50% of the container */
-    display: flex;
-    flex-direction: column;
-    /* Ensures children stack vertically within each block */
-    align-items: center;
-    /* Centers children horizontally */
-    justify-content: center;
-    /* Centers children vertically */
-    overflow: hidden;
-    /* Ensures content doesn't overflow the block */
-}
-
-
 form {
     width: 100%;
-    /* Ensures the form takes the full width of its container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
-
-.container {
-    width: 100%;
-    /* Ensures the form content takes the full width of the form */
-    /* Optional: add some padding */
-    /*box-sizing: border-box;*/
-
-}
-
 button {
     background-color: rgba(49, 0, 195, 0.636);
     color: aliceblue;
@@ -89,25 +50,33 @@ button:active {
     margin-top: 10px;
 }
 
-/*button{
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}*/
+
 .first-btn {
     width: 250px;
 }
+.email-pass {
+    /*margin-left: 30px;*/
+    
+    font-size: 17px;
+}
 
-.input-email-pass {
+.input-email, .input-pass {
+    text-align: center;
     width: 270px;
     height: 30px;
-    position: absolute;
-    left: 400px;
     border-color: rgba(240, 248, 255, 0);
     background-color: rgba(83, 43, 226, 0.116);
     border-radius: 25px;
+    position: relative;
+   
 }
+
+.linktosignin-up {
+    cursor: pointer;
+    color: rgb(252, 124, 173);
+}
+
+
 
 /*For the checkbox-----------*/
 .hidden-checkbox {
@@ -127,7 +96,6 @@ button:active {
     display: inline-block;
     vertical-align: middle;
     border: 2px solid rgb(255, 255, 255);
-    /* Add border color here */
 }
 
 .custom-checkbox input:checked+.checkbox {
@@ -136,18 +104,9 @@ button:active {
 }
 
 /*----------------*/
-.email-pass {
-    margin-left: 30px;
-    text-align: left;
-    font-size: 17px;
-}
 
-.linktosignin-up {
-    cursor: pointer;
-    color: rgb(252, 124, 173);
-}
 
-.front-rectangle {
+/*.front-rectangle {
     background-color: rgba(111, 5, 88, 0.508);
     position: absolute;
     height: 100%;
@@ -155,18 +114,20 @@ button:active {
     top: 0.9%;
     left: 51.8%;
 }
+*/
 
-
+.block-right {
+    flex: 1;
+    margin-right: 250px;
+    
+    justify-content: center;
+}
 .pc-cafe {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    /* Ensures the image covers the block */
-    position: absolute;
     height: 100%;
-    width: 30.5%;
-    top: 0.9%;
-    left: 51.8%;
+
 }
 
 .loading-img {

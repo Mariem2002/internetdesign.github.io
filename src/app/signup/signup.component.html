@@ -5,36 +5,43 @@
     <div class="block-left">
       <img src="" />
       <form [formGroup]="profileForm" (ngSubmit)="showInfosAndGoHome()" action="action_page.php">
-        <div class="container">
+        <div class="centered">
           <h1><span style="color: #54044179;">SIGN UP</span></h1>
           <button class="first-btn">Sign up with Google</button>
           <hr>
           <p class="or"> - or - </p>
-          <div class="email-pass">
-            <label for="email"><b>Email</b></label>
-            <input class="input-email-pass" id="email" type="text" formControlName="email" placeholder='' name="email"
+        </div>
+        <div class="email-pass">
+          <label for="email"><b>Email</b></label><br>
+          <div class="centered">
+            <input class="input-email" id="email" type="text" formControlName="email" placeholder='' name="email"
               required>
-            <br><br>
-            <label for="psw"><b>Password</b></label>
-            <input id="password" class="input-email-pass" type="password" formControlName="password" placeholder=""
-              name="psw" required>
+          </div>
+          <br><br>
+          <label for="psw"><b>Password</b></label><br>
+          <div class="centered">
+            <input id="password" class="input-pass" type="password" formControlName="password" placeholder="" name="psw"
+              required>
           </div>
           <br>
-          <label class="custom-checkbox">
-            <input type="checkbox" class="hidden-checkbox" name="remember" style="margin-bottom:15px"> Remember me
-            <span class="checkbox"></span>
-          </label>
+          <div class="centered">
+            <label class="custom-checkbox">
+              <input type="checkbox" class="hidden-checkbox" name="remember" style="margin-bottom:15px"> Remember me
+              <span class="checkbox"></span>
+            </label>
 
-          <p style="color: rgba(0, 0, 0, 0.54);">By creating an account you agree to our <a class="linktoprivacy"
-              (click)="GoToPrivacy()" style="color:dodgerblue">Terms & Privacy</a>.</p>
-          <div>
-            <section>
-              <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Sign up</button>
-            </section>
-            <section>
-              <button type="button" class="cancelbtn" (click)="GoToHome()">Cancel</button>
-              <p>Already subscribed ? <a class="linktosignin-up" (click)="GoToSingnIn()"> Sign in now</a></p>
-            </section>
+            <p style="color: rgba(0, 0, 0, 0.54);">By creating an account you agree to our <a class="linktoprivacy"
+                (click)="GoToPrivacy()" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div>
+              <section>
+                <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Sign up</button>
+              </section>
+              <section>
+                <button type="button" class="cancelbtn" (click)="GoToHome()">Cancel</button>
+                <p>Already subscribed ? <a class="linktosignin-up" (click)="GoToSingnIn()"> Sign in now</a></p>
+              </section>
+            </div>
+
           </div>
         </div>
       </form>

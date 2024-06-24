@@ -15,18 +15,18 @@
             <form [formGroup]="profileForm" (ngSubmit)="showInfosAndGoHome()" action="">
                 <div class="container">
 
-                    <div class="email-pass">
-                        <label for="name"><b>Name<span>(required)</span></b></label>
-                        <input class="input-email-pass" id="name" type="text" formControlName="name" placeholder=''
+                    <div class="email-name">
+                        <label for="name"><b>Name <span>(required)</span></b></label>
+                        <input class="input-email-name" id="name" type="text" formControlName="name" placeholder=''
                             name="name" required>
-                        <br><br>
-                        <label for="email"><b>Email<span>(required)</span></b></label>
-                        <input id="email" class="input-email-pass" type="email" formControlName="email" placeholder=""
+                        
+                        <label for="email"><b>Email <span>(required)</span></b></label>
+                        <input id="email" class="input-email-name" type="email" formControlName="email" placeholder=""
                             name="email" required>
 
                     </div>
                     <br>
-                    <label class="Message"><b>Message<span>(required)</span></b>
+                    <label class="Message"><b>Message <span>(required)</span></b><br>
                         <textarea></textarea>
                     </label>
 
@@ -34,7 +34,7 @@
 
                     <div class="clearfix">
                         <section>
-                            <button type="submit" [disabled]="!profileForm.valid" class="signinbtn">Submit</button>
+                            <button type="submit" [disabled]="!profileForm.valid" class="submitbtn">Submit</button>
                         </section>
 
                     </div>
